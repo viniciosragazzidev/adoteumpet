@@ -3,7 +3,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 const NotificationComponent = () => {
   return (
-    <div className=" w-full max-w-xs bg-white_custom2 min-h-[5rem] fixed top-0 right-0 m-5  z-50 rounded-lg p-4 flex gap-2">
+    <div className=" w-full max-w-xs bg-white_custom2 min-h-[5rem] fixed top-0 right-0 m-5  z-50 rounded-lg p-4  gap-2 hidden">
       <span className="text-lg p-4 w-2 h-2 flex items-center justify-center bg-white_custom2 text-green-400 notificationIcon rounded-full">
         <span>
           <AiFillCheckCircle />
