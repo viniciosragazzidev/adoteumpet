@@ -92,7 +92,7 @@ const ContactComponent = () => {
             </ul>
           </nav>
         </div>
-        <div className="side w-full h-full flex flex-col gap-10 flex-1  p-4 px-7 rounded-lg">
+        <div className="side w-full h-full flex flex-col gap-10 flex-1  p-4 sm:px-7 rounded-lg">
           <div className="form">
             <FormularioComponent />
           </div>
