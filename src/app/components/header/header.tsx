@@ -43,7 +43,7 @@ const HeaderComponent = () => {
         </div>
       </div>
 
-      <div className=" h-full flex flex- justify-center items-center  max-sm:mt-10   header-right">
+      <div className=" h-full flex flex- justify-center items-center  max-sm:mt-10   header-right max-[520px]:hidden">
         <div className="imgArea max-w-sm">
           <Image
             src={"/pugHero.png"}
