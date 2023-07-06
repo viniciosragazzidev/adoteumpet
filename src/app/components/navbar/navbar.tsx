@@ -10,7 +10,9 @@ const NavbarComponent = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
     <nav className="w-full show-bottom">
-      <div className="flex justify-between items-center px-p_page_l max-lg:px-p_page_s py-6  container mx-auto">
+      <div
+        className={`flex justify-between items-center px-p_page_l max-lg:px-p_page_s py-6  container mx-auto ${styles.navbar}`}
+      >
         <Logo />
         <div
           className={`

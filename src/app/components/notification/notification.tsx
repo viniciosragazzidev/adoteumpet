@@ -8,7 +8,6 @@ const NotificationComponent = () => {
   const isOpen = useSelector((state: RootState) => state.notification.isOpen);
 
   const message = useSelector((state: RootState) => state.notification.message);
-  console.log(isOpen);
 
   return (
     <div
@@ -22,9 +21,7 @@ const NotificationComponent = () => {
         </span>
       </span>
       <div className="content flex flex-col gap-2 text-prussian_blue">
-        <span className="text-sm font-semibold">
-          {message[0].title} {isOpen && "dd"}
-        </span>
+        <span className="text-sm font-semibold">{message[0].title}</span>
         <span className="text-xs ">{message[0].description}</span>
       </div>
     </div>

@@ -17,11 +17,11 @@ const ServicesComponent = () => {
 
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10">
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center text-xl font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
               <span className="text-3xl">
                 <IoPawSharp />
               </span>
-              <h1 className="font-bold ">Adoção de animais:</h1>
+              <h1 className="font-bold text-lg ">Adoção de animais:</h1>
             </div>
             <span className="text-prussian_blue text-sm max-sm:text-center">
               Encontre seu novo melhor amigo através da Adote um Amigo. Navegue
@@ -32,11 +32,11 @@ const ServicesComponent = () => {
           </div>
 
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center text-xl font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
               <span className="text-3xl">
                 <MdSupport />
               </span>
-              <h1 className="font-bold ">Apoio pós-adoção:</h1>
+              <h1 className="font-bold text-lg ">Apoio pós-adoção:</h1>
             </div>
             <span className="text-prussian_blue text-sm max-sm:text-center">
               Conte com o apoio da Adote um Amigo após a adoção. Oferecemos
@@ -47,11 +47,11 @@ const ServicesComponent = () => {
           </div>
 
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center text-xl font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
               <span className="text-3xl">
                 <IoCartSharp />
               </span>
-              <h1 className="font-bold ">
+              <h1 className="font-bold text-lg ">
                 Produtos para animais de estimação:
               </h1>
             </div>
@@ -63,11 +63,13 @@ const ServicesComponent = () => {
             </span>
           </div>
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center text-xl font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
               <span className="text-3xl">
                 <AiFillMedicineBox />
               </span>
-              <h1 className="font-bold ">Parcerias com veterinários:</h1>
+              <h1 className="font-bold text-lg ">
+                Parcerias com veterinários:
+              </h1>
             </div>
             <span className="text-prussian_blue text-sm max-sm:text-center">
               Cuide da saúde do seu animal de estimação com as parcerias da
