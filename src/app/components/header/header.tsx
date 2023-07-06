@@ -5,9 +5,9 @@ const HeaderComponent = () => {
   return (
     <section
       id="header"
-      className="w-full min-h-[80vh]   sm:pt-16 pt-10 flex justify-between items-center sm:gap-20 max-lg:flex-col "
+      className="w-full min-h-[80vh]   sm:pt-16  flex justify-between items-center sm:gap-20 max-lg:flex-col "
     >
-      <div className="text w-full flex flex-1   flex-col gap-5 header-left">
+      <div className="text w-full flex flex-1  justify-center  flex-col gap-5 header-left">
         <h1 className=" font-bold text-4xl text-prussian_blue max-sm:text-3xl ">
           Encontre seu companheiro perfeito!
         </h1>
