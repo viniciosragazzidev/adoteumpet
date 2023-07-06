@@ -12,8 +12,8 @@ const NotificationComponent = () => {
 
   return (
     <div
-      className={`w-full flex max-w-xs bg-white_custom2 min-h-[5rem] fixed top-0 right-0 m-5  z-50 rounded-lg p-4  gap-2 transition-all translate-x-[0vw]  ${
-        !isOpen && "translate-x-96"
+      className={`w-full flex max-w-xs bg-white_custom2 min-h-[5rem] fixed top-0 right-0 m-5  z-50 rounded-lg p-4  gap-2 transition-all  ${
+        !isOpen ? "translate-x-96" : "translate-x-[0vw] "
       } `}
     >
       <span className="text-lg p-4 w-2 h-2 flex items-center justify-center bg-white_custom2 text-green-400 notificationIcon rounded-full">
