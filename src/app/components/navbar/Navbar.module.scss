@@ -1,7 +1,9 @@
 .navbar {
-    animation: opacity 0.7s ease forwards;
+    animation: opacity 0.8s ease forwards;
 }
 .menus {
+    z-index: 999 !important;
+
     &::before {
         content: "";
         width: 100%;

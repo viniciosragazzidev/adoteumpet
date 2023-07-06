@@ -3,15 +3,14 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
-import Button from "../ui/button";
 import Logo from "../ui/logo";
 
 const NavbarComponent = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
-    <nav className="w-full show-bottom">
+    <nav className={`${styles.navbar} w-full show-bottom`}>
       <div
-        className={`flex justify-between items-center px-p_page_l max-lg:px-p_page_s py-6  container mx-auto ${styles.navbar}`}
+        className={`flex justify-between items-center px-p_page_l max-lg:px-p_page_s py-6  container mx-auto `}
       >
         <Logo />
         <div
@@ -23,7 +22,7 @@ const NavbarComponent = () => {
           <div
             className={`${
               styles.menus
-            } relative w-full h-full flex flex-col justify-center items-center max-md:gap-10 max-sm:before:bg-carolina_blue sm:before:hidden  ${
+            } relative w-full h-full flex flex-col justify-center items-center max-md:gap-10 z-50 max-sm:before:bg-carolina_blue sm:before:hidden  ${
               isOpenMenu ? "before:max-md:translate-x-[-100vw]" : ""
             }`}
           >

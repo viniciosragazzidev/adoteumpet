@@ -59,6 +59,10 @@ body {
   animation-delay: 0.5s;
 }
 
+.navbar {
+  animation: opacity 0.7s ease forwards;
+}
+
 @keyframes showLeft {
   100% {
     transform: translateX(0);

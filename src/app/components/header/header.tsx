@@ -5,7 +5,7 @@ const HeaderComponent = () => {
   return (
     <section
       id="header"
-      className="w-full sm:min-h-[80vh]   sm:pt-16 max-sm:py-12  flex justify-between items-center sm:gap-20 max-lg:flex-col "
+      className="w-full sm:min-h-[80vh]   sm:pt-16 max-sm:py-12  flex justify-between items-center sm:gap-20 max-lg:flex-col z-10 "
     >
       <div className="text w-full flex flex-1  justify-center  flex-col gap-8 header-left">
         <h1 className=" font-bold text-4xl text-prussian_blue max-sm:text-[1.805rem] ">
