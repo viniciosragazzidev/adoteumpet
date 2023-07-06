@@ -1,4 +1,5 @@
 import NavbarComponent from "./components/navbar/navbar";
+import NotificationComponent from "./components/notification/notification";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 
@@ -8,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Inicio - AdoteUmPet",
-  description: "Pagina inicial do AdoteUmPet",
+  title: "Inicio - adoteumpet",
+  description: "Pagina inicial do adoteumpet",
 };
 
 export default function RootLayout({
@@ -18,9 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <body className={poppins.className + ` bg-white_custom `}>
+    <html lang="pt-br" className={poppins.className + ` bg-white_custom `}>
+      <body>
         <NavbarComponent />
+        <NotificationComponent />
         {children}
       </body>
     </html>

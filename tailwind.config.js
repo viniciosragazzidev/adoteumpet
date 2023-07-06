@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        white_custom2: "#f7faff",
         white_custom: "#E5F1F2",
         carolina_blue: "#1B98E0",
         carolina_blue_2: "#007bc1",
@@ -17,9 +18,12 @@ module.exports = {
         prussian_blue: "#13293D",
       },
       padding: {
-        p_page_l: "160px",
+        p_page_l: "130px",
         p_page_m: "120px",
         p_page_s: "24px",
+      },
+      fontSize: {
+        sm: "0.805rem",
       },
     },
   },

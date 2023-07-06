@@ -1,13 +1,17 @@
+"use client";
 import Image from "next/image";
-import Button from "../ui/button";
+import { motion } from "framer-motion";
 const HeaderComponent = () => {
   return (
-    <header className="w-full  py-6 sm:pt-16 flex justify-between items-center sm:gap-20 max-sm:flex-col ">
-      <section className="text w-full flex flex-1   flex-col gap-5">
-        <h1 className=" font-bold text-5xl text-prussian_blue max-sm:text-3xl ">
+    <section
+      id="header"
+      className="w-full min-h-[80vh]   sm:pt-16 pt-10 flex justify-between items-center sm:gap-20 max-lg:flex-col "
+    >
+      <div className="text w-full flex flex-1   flex-col gap-5 header-left">
+        <h1 className=" font-bold text-4xl text-prussian_blue max-sm:text-3xl ">
           Encontre seu companheiro perfeito!
         </h1>
-        <span className="text-sm text-prussian_blue">
+        <span className="text-sm f text-prussian_blue">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut culpa
           illum ullam animi, quaerat, totam exercitationem consectetur
           adipisicing elit.
@@ -16,13 +20,13 @@ const HeaderComponent = () => {
         <div className="py-5 flex items-start gap-5 max-sm:flex-col">
           <div className="flex-1 ">
             <h1 className="text-carolina_blue font-bold text-4xl">185 mil</h1>
-            <span className="text-sm font-normal text-prussian_blue">
+            <span className="text-sm   text-prussian_blue">
               De animais resgatados após mals tratos no Brasil por ano.
             </span>
           </div>
           <div className="flex-1  max-sm:hidden">
             <h1 className="text-carolina_blue font-bold text-4xl">30M</h1>
-            <span className="text-sm font-normal text-prussian_blue">
+            <span className="text-sm  text-prussian_blue">
               De cachorros e gatos abandonados no Brasil.
             </span>
           </div>
@@ -37,14 +41,20 @@ const HeaderComponent = () => {
             </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className=" w-full h-full flex justify-center items-center  max-sm:mt-10 max-w-sm max-sm:max-w-[240px] ">
-        <div className="imgArea ">
-          <Image src={"/pugHero.png"} alt="" width={4289} height={4289} />
+      <div className=" h-full flex flex- justify-center items-center  max-sm:mt-10   header-right">
+        <div className="imgArea max-w-sm">
+          <Image
+            src={"/pugHero.png"}
+            loading="lazy"
+            alt=""
+            width={4289}
+            height={4289}
+          />
         </div>
-      </section>
-    </header>
+      </div>
+    </section>
   );
 };
 

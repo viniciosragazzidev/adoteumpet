@@ -3,9 +3,12 @@ import Image from "next/image";
 
 const AboutComponent = () => {
   return (
-    <section className="about flex  py-10 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5">
-      <div className=" w-full h-full flex items-center justify-center flex-1 ">
-        <div className="img  max-sm:max-w-[240px]">
+    <section
+      id="about"
+      className=" flex  py-10 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
+    >
+      <div className=" w-full h-full flex items-end justify-center flex-1 ">
+        <div className="imgCat  max-sm:max-w-[240px] max-w-[450px]">
           <Image
             src={"/catAbout.png"}
             alt=""

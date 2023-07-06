@@ -11,16 +11,17 @@ import {
   FaShareAltSquare,
 } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
+import FormularioComponent from "../formulario/formularioComponent";
 const ContactComponent = () => {
   const [value, setValue] = useState();
 
   return (
-    <div className="flex flex-col py-10 gap-10 ">
+    <section id="contact" className="flex flex-col py-10 gap-10 sm:gap-15 ">
       <h1 className="text-3xl text-center font-bold  text-carolina_blue_2">
         Fale com a gente:
       </h1>
-      <section className="about flex  justify-between min-h-[40vh] max-sm:flex-col-reverse max-sm:gap-5">
-        <div className="side h-full flex flex-col gap-10 flex-1 justify-center text-prussian_blue">
+      <section className="about flex  justify-between items-start min-h-[40vh] max-sm:flex-col-reverse max-sm:gap-14">
+        <div className="side  w-full h-full flex flex-col gap-10 flex-1  text-prussian_blue">
           <header>
             <Logo />
           </header>
@@ -91,75 +92,13 @@ const ContactComponent = () => {
             </ul>
           </nav>
         </div>
-        <div className="side h-full flex flex-col gap-10 flex-1  p-4 px-7 rounded-lg">
+        <div className="side w-full h-full flex flex-col gap-10 flex-1  p-4 px-7 rounded-lg">
           <div className="form">
-            <form className="flex flex-col gap-10">
-              <div className="formArea flex flex-col gap-1">
-                <label
-                  htmlFor="nome"
-                  className="font-semibold text-prussian_blue"
-                >
-                  Nome
-                </label>
-                <div className="inputArea w-full h-10 border-b border-blue-200 ">
-                  <input
-                    type="text"
-                    placeholder="Seu nome"
-                    className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
-                  />
-                </div>
-              </div>
-              <div className="formArea flex flex-col gap-1">
-                <label
-                  htmlFor="email"
-                  className="font-semibold text-prussian_blue"
-                >
-                  Email
-                </label>
-                <div className="inputArea w-full h-10 border-b border-blue-200 ">
-                  <input
-                    type="email"
-                    placeholder="Seu email"
-                    className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
-                  />
-                </div>
-              </div>
-              <div className="formArea flex flex-col gap-1">
-                <label
-                  htmlFor="text"
-                  className="font-semibold text-prussian_blue"
-                >
-                  Telefone
-                </label>
-                <div className="inputArea formNumber w-full h-10 border-b border-blue-200 ">
-                  <input
-                    type="email"
-                    placeholder="Seu telefone"
-                    className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
-                  />
-                </div>
-              </div>
-
-              <div className="formArea flex flex-col gap-1">
-                <label
-                  htmlFor="text"
-                  className="font-semibold text-prussian_blue"
-                >
-                  Telefone
-                </label>
-                <div className="inputArea formNumber w-full h-10 border-b border-blue-200 ">
-                  <input
-                    type="email"
-                    placeholder="Seu telefone"
-                    className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
-                  />
-                </div>
-              </div>
-            </form>
+            <FormularioComponent />
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 
