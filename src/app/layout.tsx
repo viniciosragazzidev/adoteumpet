@@ -2,6 +2,7 @@ import NavbarComponent from "./components/navbar/navbar";
 import NotificationComponent from "./components/notification/notification";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import ReduxProvider from "./redux/reduxProvider";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -19,12 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" className={poppins.className + ` bg-white_custom `}>
-      <body>
-        <NavbarComponent />
-        <NotificationComponent />
-        {children}
-      </body>
-    </html>
+    <ReduxProvider>
+      <html lang="pt-br" className={poppins.className + ` bg-white_custom `}>
+        <body>
+          <NavbarComponent />
+          <NotificationComponent />
+          {children}
+        </body>
+      </html>
+    </ReduxProvider>
   );
 }

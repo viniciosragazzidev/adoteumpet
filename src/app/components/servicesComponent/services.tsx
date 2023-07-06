@@ -11,7 +11,7 @@ const ServicesComponent = () => {
       className="about flex  py-10 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
     >
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
-        <h1 className="text-3xl font-bold  text-carolina_blue_2">
+        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
           Nossos serviços:
         </h1>
 

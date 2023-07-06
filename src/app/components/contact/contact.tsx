@@ -17,7 +17,7 @@ const ContactComponent = () => {
 
   return (
     <section id="contact" className="flex flex-col py-10 gap-10 sm:gap-15 ">
-      <h1 className="text-3xl text-center font-bold  text-carolina_blue_2">
+      <h1 className="text-3xl max-sm:text-[1.805rem] text-center font-bold  text-carolina_blue_2">
         Fale com a gente:
       </h1>
       <section className="about flex  justify-between items-start min-h-[40vh] max-sm:flex-col-reverse max-sm:gap-14">
@@ -59,7 +59,7 @@ const ContactComponent = () => {
                   </span>
                   <a
                     href="/"
-                    className="py-2 font-bold text-sm hover:text-carolina_blue transition-all"
+                    className="py-2 font-bold text-sm hover:text-carolina_blue transition-all self-start"
                   >
                     (21) 99999-8888
                   </a>
@@ -76,7 +76,7 @@ const ContactComponent = () => {
                   <span className="text-sm">
                     Encontre a gente nas redes mais próximas.
                   </span>
-                  <span className="py-2 flex items-center gap-4 text-3xl">
+                  <span className="py-2 flex items-center gap-4 text-2xl">
                     <span className="overflow-hidden rounded-full">
                       <FaInstagramSquare className="cursor-pointer hover:" />
                     </span>

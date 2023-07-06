@@ -19,7 +19,7 @@ const AboutComponent = () => {
         </div>
       </div>
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
-        <h1 className="text-3xl font-bold  text-carolina_blue_2">
+        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
           Quem Somos?
         </h1>
 

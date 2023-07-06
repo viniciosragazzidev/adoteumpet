@@ -5,10 +5,10 @@ const HeaderComponent = () => {
   return (
     <section
       id="header"
-      className="w-full min-h-[80vh]   sm:pt-16  flex justify-between items-center sm:gap-20 max-lg:flex-col "
+      className="w-full sm:min-h-[80vh]   sm:pt-16 max-sm:py-12  flex justify-between items-center sm:gap-20 max-lg:flex-col "
     >
-      <div className="text w-full flex flex-1  justify-center  flex-col gap-5 header-left">
-        <h1 className=" font-bold text-4xl text-prussian_blue max-sm:text-3xl ">
+      <div className="text w-full flex flex-1  justify-center  flex-col gap-8 header-left">
+        <h1 className=" font-bold text-4xl text-prussian_blue max-sm:text-[1.805rem] ">
           Encontre seu companheiro perfeito!
         </h1>
         <span className="text-sm f text-prussian_blue">
@@ -17,7 +17,7 @@ const HeaderComponent = () => {
           adipisicing elit.
         </span>
 
-        <div className="py-5 flex items-start gap-5 max-sm:flex-col">
+        <div className="py-5 flex items-start gap-5 max-sm:hidden">
           <div className="flex-1 ">
             <h1 className="text-carolina_blue font-bold text-4xl">185 mil</h1>
             <span className="text-sm   text-prussian_blue">
@@ -31,7 +31,7 @@ const HeaderComponent = () => {
             </span>
           </div>
         </div>
-        <div className="w-full text-sm max-sm:flex max-sm:justify-center max-sm:items-center max-sm:text-center ">
+        <div className="w-full text-sm max-sm:flex max-sm:items-center max-sm:text-center ">
           <div className="">
             <a
               href={"/"}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../redux/store";
+import { handleNotification, setMessage } from "../../redux/notificationSlice";
 type Inputs = {
   name: string;
   email: string;
@@ -14,13 +16,18 @@ const FormularioComponent = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
+
+  const dispatch = useDispatch<AppDispatch>();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     if (text && email && telefone && name) {
       setEmail("");
       setTelefone("");
       setName("");
       setText("");
-      alert("Enviado");
+
+      dispatch(handleNotification());
+    } else {
     }
   };
 
