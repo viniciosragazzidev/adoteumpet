@@ -45,7 +45,7 @@ const HeaderComponent = () => {
         </div>
       </div>
 
-      <div className=" h-full flex flex-1 justify-center items-center  max-sm:mt-10   header-right ">
+      {/* <div className=" h-full flex flex-1 justify-center items-center  max-sm:mt-10   header-right ">
         <div className="imgArea max-w-sm">
           <Image
             src={"/pugHero.png"}
@@ -55,7 +55,7 @@ const HeaderComponent = () => {
             height={4289}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
