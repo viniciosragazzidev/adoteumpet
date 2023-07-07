@@ -51,8 +51,8 @@ const HeaderComponent = () => {
             src={"/pugHero.png"}
             loading="lazy"
             alt=""
-            width={4289}
-            height={4289}
+            width={428}
+            height={428}
           />
         </div>
       </div>
