@@ -13,12 +13,10 @@ import {
 import { FaSquareTwitter } from "react-icons/fa6";
 import FormularioComponent from "../formulario/formularioComponent";
 const ContactComponent = () => {
-  const [value, setValue] = useState();
-
   return (
-    <section id="contact" className="flex flex-col py-10 gap-10 sm:gap-15 ">
+    <section id="contact" className="flex flex-col  pt-24 gap-10 sm:gap-15 ">
       <h1 className="text-3xl max-sm:text-[1.805rem] text-center font-bold  text-carolina_blue_2">
-        Fale com a gente:
+        <span className="text-prussian_blue"> Fale com</span> a gente:
       </h1>
       <section className="about flex  justify-between items-start min-h-[40vh] max-sm:flex-col-reverse max-sm:gap-14">
         <div className="side  w-full h-full flex flex-col gap-10 flex-1  text-prussian_blue">

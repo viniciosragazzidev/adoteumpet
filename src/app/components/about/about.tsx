@@ -5,7 +5,7 @@ const AboutComponent = () => {
   return (
     <section
       id="about"
-      className=" flex  py-10 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
+      className=" flex   pt-24 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
     >
       <div className=" w-full h-full flex items-end justify-center flex-1 ">
         <div className="imgCat  max-sm:max-w-[240px] max-w-[450px]">
@@ -20,7 +20,7 @@ const AboutComponent = () => {
       </div>
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
         <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
-          Quem Somos?
+          <span className="text-prussian_blue">Quem </span> Somos?
         </h1>
 
         <div className="boxAboutItem flex flex-col gap-4">

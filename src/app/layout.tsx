@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <ReduxProvider>
-      <html lang="pt-br" className={poppins.className + ` bg-white_custom `}>
+      <html lang="pt-br" className={poppins.className}>
         <body>
           <NavbarComponent />
           <NotificationComponent />

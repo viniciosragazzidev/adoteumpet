@@ -8,11 +8,11 @@ const ServicesComponent = () => {
   return (
     <section
       id="services"
-      className="about flex  py-10 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
+      className=" flex   pt-24 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
     >
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
         <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
-          Nossos serviços:
+          <span className="text-prussian_blue">Nossos </span> serviços:
         </h1>
 
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10">
