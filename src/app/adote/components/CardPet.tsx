@@ -3,7 +3,7 @@ import React from "react";
 
 const CardPet = () => {
   return (
-    <div className="card w-full max-w-xs max-h-min p-2 bg-white_custom2">
+    <div className="card w-full max-w-xs max-h-min p-2 bg-white_custom2 rounded-md">
       <div className="imgBox">
         <Image src={"/dogCard.webp"} width={750} height={500} alt="" />
       </div>
