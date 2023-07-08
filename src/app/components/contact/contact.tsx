@@ -15,11 +15,11 @@ import FormularioComponent from "../formulario/formularioComponent";
 const ContactComponent = () => {
   return (
     <section id="contact" className="flex flex-col  pt-24 gap-10 sm:gap-15 ">
-      <h1 className="text-3xl max-sm:text-[1.805rem] text-center font-bold  text-carolina_blue_2">
-        <span className="text-prussian_blue"> Fale com</span> a gente:
+      <h1 className="text-3xl max-sm:text-[1.805rem] text-center font-bold  text-curious-blue-500_2">
+        <span className="text-curious-blue-950"> Fale com</span> a gente:
       </h1>
       <section className="about flex  justify-between items-start min-h-[40vh] max-sm:flex-col-reverse max-sm:gap-14">
-        <div className="side  w-full h-full flex flex-col gap-10 flex-1  text-prussian_blue">
+        <div className="side  w-full h-full flex flex-col gap-10 flex-1  text-curious-blue-950">
           <header>
             <Logo />
           </header>
@@ -27,7 +27,7 @@ const ContactComponent = () => {
           <nav>
             <ul className="flex flex-col gap-10">
               <li className="flex items-start gap-5">
-                <div className="icon text-3xl text-carolina_blue">
+                <div className="icon text-3xl text-curious-blue-500">
                   <BsFillChatHeartFill />
                 </div>
                 <div className="content flex flex-col gap-2">
@@ -38,7 +38,7 @@ const ContactComponent = () => {
                   <span className="py-2 ">
                     <a
                       href={"/"}
-                      className={`w-full px-5 py-2 bg-carolina_blue text-white font-medium text-sm rounded-md cursor-pointer transition-all hover:opacity-95`}
+                      className={`w-full px-5 py-2 bg-curious-blue-500 text-white font-medium text-sm rounded-md cursor-pointer transition-all hover:opacity-95`}
                     >
                       Iniciar chat{" "}
                     </a>
@@ -46,7 +46,7 @@ const ContactComponent = () => {
                 </div>
               </li>
               <li className="flex items-start gap-5">
-                <div className="icon text-3xl text-carolina_blue">
+                <div className="icon text-3xl text-curious-blue-500">
                   <RiWhatsappFill />
                 </div>
                 <div className="content flex flex-col gap-2">
@@ -57,7 +57,7 @@ const ContactComponent = () => {
                   </span>
                   <a
                     href="/"
-                    className="py-2 font-bold text-sm hover:text-carolina_blue transition-all self-start"
+                    className="py-2 font-bold text-sm hover:text-curious-blue-500 transition-all self-start"
                   >
                     (21) 99999-8888
                   </a>
@@ -65,7 +65,7 @@ const ContactComponent = () => {
               </li>
               <li className="flex items-start gap-5">
                 <div className=" w-7 h-7 clampb">
-                  <div className="icon text-3xl w-full h-full flex items-center overflow-hidden  justify-center rounded-full  text-carolina_blue ">
+                  <div className="icon text-3xl w-full h-full flex items-center overflow-hidden  justify-center rounded-full  text-curious-blue-500 ">
                     <FaShareAltSquare className="w-[120%]" />
                   </div>
                 </div>

@@ -5,13 +5,19 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import Logo from "../ui/logo";
 import Link from "next/link";
+import { setIsLoading } from "@/app/redux/appSlice";
+import { useDispatch } from "react-redux";
 const NavbarComponent = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [currentPage, setCurrentPage] = useState("");
+  const dispatch = useDispatch();
+
+  const currentURL = window.location.pathname;
+
   return (
-    <div className="w-screen fixed bg-white_custom2 z-50 border-t-8 border-t-carolina_blue">
+    <div className="w-screen fixed bg-white_custom2 z-50 border-t-8 border-t-curious-blue-500 bg-curious-blue-55">
       <nav
-        className={`${styles.navbar} w-full show-bottom flex justify-between items-center px-p_page_l
+        className={`${styles.navbar}  w-full show-bottom flex justify-between items-center px-p_page_l
         max-lg:px-p_page_s py-4   mx-auto container  top-0 left-0 `}
       >
         <Logo />
@@ -24,8 +30,10 @@ const NavbarComponent = () => {
           <div
             className={`${
               styles.menus
-            } relative w-full h-full flex flex-col justify-center items-center max-md:gap-10  max-sm:before:bg-carolina_blue sm:before:hidden  ${
-              isOpenMenu ? "before:max-md:translate-x-[-100vw]" : ""
+            } relative w-full h-full flex flex-col justify-center items-center max-md:gap-10  max-sm:before:bg-curious-blue-500 sm:before:hidden  ${
+              isOpenMenu
+                ? "before:max-md:translate-x-[-100vw] max-md:bg-curious-blue-55"
+                : ""
             }`}
           >
             <span
@@ -49,11 +57,15 @@ const NavbarComponent = () => {
                   onClick={() => {
                     setIsOpenMenu(false);
                     setCurrentPage(url);
+
+                    url === "/" &&
+                      currentURL != "/" &&
+                      dispatch(setIsLoading(true));
                   }}
-                  className={` text-prussian_blue transition-all  ${
+                  className={` transition-all  ${
                     currentPage === url
-                      ? "font-bold bg-carolina_blue px-4 py-2 rounded-full text-white_custom2"
-                      : "font-medium hover:text-carolina_blue "
+                      ? "font-semibold bg-curious-blue-500 px-4 py-2 rounded-full text-curious-blue-50 "
+                      : "font-medium hover:text-curious-blue-500 text-curious-blue-950  "
                   }`}
                 >
                   {title}
@@ -67,11 +79,11 @@ const NavbarComponent = () => {
                   setCurrentPage("");
                   setIsOpenMenu(false);
                 }}
-                className={`w-full px-5 py-2 bg-carolina_blue text-white font-medium rounded-md cursor-pointer transition-all hover:opacity-95`}
+                className={`w-full px-5 py-2 bg-curious-blue-500 text-white font-medium rounded-md cursor-pointer transition-all hover:opacity-95`}
               >
                 Quero adotar
               </Link>
-              <span className="cursor-pointer hover:scale-95  transition-all font-medium hover:text-carolina_blue">
+              <span className="cursor-pointer hover:scale-95  transition-all font-medium hover:text-curious-blue-500">
                 Entrar
               </span>
             </div>
@@ -81,21 +93,23 @@ const NavbarComponent = () => {
           <div className="flex items-center gap-4 text-sm max-sm:hidden">
             <Link
               href={"/adote"}
-              className={`w-full px-5 py-2 bg-carolina_blue text-white font-medium rounded-md cursor-pointer transition-all hover:opacity-95`}
+              className={`w-full px-5 py-2 bg-curious-blue-500 text-white font-medium rounded-md cursor-pointer transition-all hover:opacity-95`}
               onClick={() => {
                 setCurrentPage("");
+                dispatch(setIsLoading(true));
               }}
             >
               Quero adotar
             </Link>
 
-            <span className="cursor-pointer hover:scale-95  transition-all font-medium hover:text-carolina_blue">
+            <span className="cursor-pointer hover:scale-95  transition-all font-medium hover:text-curious-blue-500">
               Entrar
             </span>
           </div>
           <span
             onClick={() => {
               setIsOpenMenu(!isOpenMenu);
+              dispatch(setIsLoading(true));
             }}
             className="hidden max-md:block cursor-pointer"
           >

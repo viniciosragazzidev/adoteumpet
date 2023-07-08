@@ -20,7 +20,7 @@ const NotificationComponent = () => {
           <AiFillCheckCircle />
         </span>
       </span>
-      <div className="content flex flex-col gap-2 text-prussian_blue">
+      <div className="content flex flex-col gap-2 text-curious-blue-950">
         <span className="text-sm font-semibold">{message[0].title}</span>
         <span className="text-xs ">{message[0].description}</span>
       </div>

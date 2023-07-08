@@ -11,19 +11,19 @@ const ServicesComponent = () => {
       className=" flex   pt-24 justify-between min-h-[40vh] items-center max-sm:flex-col-reverse max-sm:gap-5"
     >
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
-        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
-          <span className="text-prussian_blue">Nossos </span> serviços:
+        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-curious-blue-500_2">
+          <span className="text-curious-blue-950">Nossos </span> serviços:
         </h1>
 
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10">
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-curious-blue-950">
               <span className="text-3xl">
                 <IoPawSharp />
               </span>
               <h1 className="font-bold text-lg ">Adoção de animais:</h1>
             </div>
-            <span className="text-prussian_blue text-sm max-sm:text-center">
+            <span className="text-curious-blue-950 text-sm max-sm:text-center">
               Encontre seu novo melhor amigo através da Adote um Amigo. Navegue
               pelos perfis de animais disponíveis para adoção e preencha o
               formulário para dar o primeiro passo em direção a uma vida cheia
@@ -32,13 +32,13 @@ const ServicesComponent = () => {
           </div>
 
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-curious-blue-950">
               <span className="text-3xl">
                 <MdSupport />
               </span>
               <h1 className="font-bold text-lg ">Apoio pós-adoção:</h1>
             </div>
-            <span className="text-prussian_blue text-sm max-sm:text-center">
+            <span className="text-curious-blue-950 text-sm max-sm:text-center">
               Conte com o apoio da Adote um Amigo após a adoção. Oferecemos
               dicas de cuidados, treinamento e comportamento, além de suporte
               por telefone ou e-mail para ajudá-lo a se adaptar à vida com seu
@@ -47,7 +47,7 @@ const ServicesComponent = () => {
           </div>
 
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-curious-blue-950">
               <span className="text-3xl">
                 <IoCartSharp />
               </span>
@@ -55,7 +55,7 @@ const ServicesComponent = () => {
                 Produtos para animais de estimação:
               </h1>
             </div>
-            <span className="text-prussian_blue text-sm max-sm:text-center">
+            <span className="text-curious-blue-950 text-sm max-sm:text-center">
               Encontre tudo o que você precisa para cuidar do seu novo animal de
               estimação na loja da Adote um Amigo. Oferecemos uma ampla
               variedade de produtos, incluindo ração, brinquedos, caminhas e
@@ -63,7 +63,7 @@ const ServicesComponent = () => {
             </span>
           </div>
           <div className="boxServiceItem flex flex-col gap-4 bg-white_custom2 p-5 rounded-md">
-            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-prussian_blue">
+            <div className="header flex items-center  max-sm:flex-col  max-sm:text-center  font-normal gap-2 text-curious-blue-950">
               <span className="text-3xl">
                 <AiFillMedicineBox />
               </span>
@@ -71,7 +71,7 @@ const ServicesComponent = () => {
                 Parcerias com veterinários:
               </h1>
             </div>
-            <span className="text-prussian_blue text-sm max-sm:text-center">
+            <span className="text-curious-blue-950 text-sm max-sm:text-center">
               Cuide da saúde do seu animal de estimação com as parcerias da
               Adote um Amigo com clínicas veterinárias locais. Oferecemos
               descontos e pacotes especiais para garantir que seu novo amigo

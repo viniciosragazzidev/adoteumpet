@@ -45,7 +45,10 @@ const FormularioComponent = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="formArea flex flex-col gap-1">
-        <label htmlFor="nome" className="font-bold text-prussian_blue text-sm">
+        <label
+          htmlFor="nome"
+          className="font-bold text-curious-blue-950 text-sm"
+        >
           Nome
         </label>
         <div className="inputArea w-full h-10 border-b border-blue-200 ">
@@ -58,7 +61,7 @@ const FormularioComponent = () => {
             value={name}
             type="text"
             placeholder="Seu nome"
-            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
+            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-curious-blue-500"
           />
           {errors.name && (
             <span className="text-red-500 py-3 font-normal text-xs">
@@ -68,7 +71,10 @@ const FormularioComponent = () => {
         </div>
       </div>
       <div className="formArea flex flex-col gap-1">
-        <label htmlFor="email" className="font-bold text-prussian_blue text-sm">
+        <label
+          htmlFor="email"
+          className="font-bold text-curious-blue-950 text-sm"
+        >
           Email
         </label>
         <div className="inputArea w-full h-10 border-b border-blue-200 ">
@@ -81,7 +87,7 @@ const FormularioComponent = () => {
             value={email}
             type="email"
             placeholder="Seu email"
-            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
+            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-curious-blue-500"
           />
           {errors.email && (
             <span className="text-red-500 py-3 font-normal text-xs">
@@ -91,7 +97,10 @@ const FormularioComponent = () => {
         </div>
       </div>
       <div className="formArea flex flex-col gap-1">
-        <label htmlFor="text" className="font-bold text-prussian_blue text-sm">
+        <label
+          htmlFor="text"
+          className="font-bold text-curious-blue-950 text-sm"
+        >
           Telefone
         </label>
         <div className="inputArea formNumber w-full h-10 border-b border-blue-200 ">
@@ -108,13 +117,16 @@ const FormularioComponent = () => {
             value={telefone}
             type="tel"
             placeholder="Seu telefone"
-            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
+            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-curious-blue-500"
           />
         </div>
       </div>
 
       <div className="formArea flex flex-col gap-3">
-        <label htmlFor="text" className="font-bold text-prussian_blue text-sm">
+        <label
+          htmlFor="text"
+          className="font-bold text-curious-blue-950 text-sm"
+        >
           O que precisa de nós?
         </label>
         <div className="inputArea formNumber w-full h-36 border-b border-blue-200 ">
@@ -126,7 +138,7 @@ const FormularioComponent = () => {
             }}
             value={text}
             placeholder="Digite aqui..."
-            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-carolina_blue"
+            className="w-full h-full bg-transparent focus:outline-none focus:border-b focus:border-b-curious-blue-500"
           ></textarea>
           {errors.text && (
             <span className="text-red-500 py-3 font-normal text-xs">
@@ -137,7 +149,7 @@ const FormularioComponent = () => {
       </div>
       <button
         type="submit"
-        className="w-full px-5 py-2 bg-carolina_blue text-white font-medium text-sm rounded-md cursor-pointer transition-all hover:opacity-95`"
+        className="w-full px-5 py-2 bg-curious-blue-500 text-white font-medium text-sm rounded-md cursor-pointer transition-all hover:opacity-95`"
       >
         Enviar
       </button>

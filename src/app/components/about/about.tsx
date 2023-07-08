@@ -19,16 +19,16 @@ const AboutComponent = () => {
         </div>
       </div>
       <div className="side h-full flex flex-col gap-10 flex-1 justify-center">
-        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-carolina_blue_2">
-          <span className="text-prussian_blue">Quem </span> Somos?
+        <h1 className="text-3xl max-sm:text-[1.805rem] font-bold  text-curious-blue-500_2">
+          <span className="text-curious-blue-950">Quem </span> Somos?
         </h1>
 
         <div className="boxAboutItem flex flex-col gap-4">
-          <div className="header flex items-center text-xl font-normal gap-2 text-prussian_blue">
+          <div className="header flex items-center text-xl font-normal gap-2 text-curious-blue-950">
             <span className="">01.</span>
             <h1 className="font-bold ">O que é a Adote um Pet?</h1>
           </div>
-          <span className="text-prussian_blue text-sm">
+          <span className="text-curious-blue-950 text-sm">
             A Adote um Amigo é uma empresa que ajuda animais de estimação a
             encontrar um lar amoroso, trabalhando com abrigos e organizações
             locais.
@@ -36,11 +36,11 @@ const AboutComponent = () => {
         </div>
 
         <div className="boxAboutItem flex flex-col gap-4">
-          <div className="header flex items-center text-xl font-normal gap-2 text-prussian_blue">
+          <div className="header flex items-center text-xl font-normal gap-2 text-curious-blue-950">
             <span className="">02.</span>
             <h1 className="font-bold ">Como posso adotar um animal?</h1>
           </div>
-          <span className="text-prussian_blue text-sm">
+          <span className="text-curious-blue-950 text-sm">
             Para adotar, navegue pelos perfis de animais disponíveis em nosso
             site e preencha o formulário de adoção. Nossa equipe entrará em
             contato com você.
@@ -48,11 +48,11 @@ const AboutComponent = () => {
         </div>
 
         <div className="boxAboutItem flex flex-col gap-4">
-          <div className="header flex items-center text-xl font-normal gap-2 text-prussian_blue">
+          <div className="header flex items-center text-xl font-normal gap-2 text-curious-blue-950">
             <span className="">03.</span>
             <h1 className="font-bold ">Como posso ajudar a Adote um Amigo? </h1>
           </div>
-          <span className="text-prussian_blue text-sm">
+          <span className="text-curious-blue-950 text-sm">
             Você pode ajudar com doações financeiras ou de suprimentos,
             voluntariado em eventos e compartilhando nossas postagens nas redes
             sociais.

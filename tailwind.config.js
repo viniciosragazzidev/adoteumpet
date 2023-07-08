@@ -8,14 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white_custom2: "#f7faff",
-        white_custom: "#E5F1F2",
-        carolina_blue: "#1B98E0",
-        carolina_blue_2: "#007bc1",
-
-        celadon_blue: "#247BA0",
-        sapphire_blue: "#006494",
-        prussian_blue: "#13293D",
+        "curious-blue": {
+          50: "#f1f8fe",
+          55: "#e5f1f2",
+          100: "#e2f1fc",
+          200: "#bee2f9",
+          300: "#84caf5",
+          400: "#43b0ed",
+          500: "#1b98e0",
+          600: "#0d76bc",
+          700: "#0c5e98",
+          800: "#0e517e",
+          900: "#124468",
+          950: "#0c2b45",
+        },
       },
       padding: {
         p_page_l: "130px",
