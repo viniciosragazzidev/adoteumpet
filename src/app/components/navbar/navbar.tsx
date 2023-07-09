@@ -5,14 +5,17 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import Logo from "../ui/logo";
 import Link from "next/link";
+
 import { setIsLoading } from "@/app/redux/appSlice";
 import { useDispatch } from "react-redux";
+import { usePathname } from "next/navigation";
+
 const NavbarComponent = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [currentPage, setCurrentPage] = useState("");
   const dispatch = useDispatch();
 
-  const currentURL = window.location.pathname;
+  const currentURL = usePathname();
 
   return (
     <div className="w-screen fixed bg-white_custom2 z-50 border-t-8 border-t-curious-blue-500 bg-curious-blue-55">
