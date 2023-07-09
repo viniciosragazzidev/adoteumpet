@@ -20,7 +20,7 @@ export interface IPets {
 interface PetsState {
   pets: Array<IPets>;
   estado: string;
-  cidade: string;
+  especie: string;
   porte: string;
 }
 
@@ -168,7 +168,7 @@ const initialState: PetsState = {
     },
   ],
   estado: "all",
-  cidade: "all",
+  especie: "all",
   porte: "all",
 };
 
@@ -182,15 +182,24 @@ const petsSlice = createSlice({
     setEstado: (state, action: PayloadAction<string>) => {
       state.estado = action.payload;
     },
-    setCidade: (state, action: PayloadAction<string>) => {
-      state.cidade = action.payload;
+    setEspecie: (state, action: PayloadAction<string>) => {
+      state.especie = action.payload;
     },
     setPorte: (state, action: PayloadAction<string>) => {
       state.porte = action.payload;
     },
+    handleFavorites: (state, action: PayloadAction<IPets>) => {
+      const petsCopy = state.pets.map((petC) => {
+        if (petC.id === action.payload.id) {
+          return { ...petC, favorited: !petC.favorited };
+        }
+        return petC;
+      });
+      state.pets = petsCopy;
+    },
   },
 });
 
-export const { setPets, setEstado, setCidade, setPorte } = petsSlice.actions;
-
+export const { setPets, setEstado, setEspecie, setPorte, handleFavorites } =
+  petsSlice.actions;
 export default petsSlice.reducer;

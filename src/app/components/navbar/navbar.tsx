@@ -112,7 +112,6 @@ const NavbarComponent = () => {
           <span
             onClick={() => {
               setIsOpenMenu(!isOpenMenu);
-              dispatch(setIsLoading(true));
             }}
             className="hidden max-md:block cursor-pointer"
           >
