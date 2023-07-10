@@ -61,9 +61,7 @@ const NavbarComponent = () => {
                     setIsOpenMenu(false);
                     setCurrentPage(url);
 
-                    url === "/" &&
-                      currentURL != "/" &&
-                      dispatch(setIsLoading(true));
+                    currentURL != "/" && dispatch(setIsLoading(true));
                   }}
                   className={` transition-all  ${
                     currentPage === url
@@ -99,7 +97,6 @@ const NavbarComponent = () => {
               className={`w-full px-5 py-2 bg-curious-blue-500 text-white font-medium rounded-md cursor-pointer transition-all hover:opacity-95`}
               onClick={() => {
                 setCurrentPage("");
-                dispatch(setIsLoading(true));
               }}
             >
               Quero adotar

@@ -32,6 +32,13 @@ img:not(.imgArea img) {
   z-index: 9999;
   background-color: #00000033;
 }
+
+.modal .content {
+  opacity: 0;
+  transform: translateX(-150px);
+
+  animation: showLeft 0.4s ease forwards, opacity 0.4s ease forwards;
+}
 .cardPet {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }

@@ -37,7 +37,18 @@ const ModalInfoPet = () => {
   const router = useRouter();
   const handleCloseModal = () => {
     router.replace("/adote");
+    setModalClosed(true);
   };
+
+  if (!modalClosed) {
+    document.addEventListener("click", (e: any) => {
+      if (e.target) {
+        if (e.target.classList.contains("modal")) {
+          handleCloseModal();
+        }
+      }
+    });
+  }
 
   return (
     <div
@@ -46,20 +57,19 @@ const ModalInfoPet = () => {
       }`}
     >
       {currentPet[0] ? (
-        <div className="content relative w-full h-screen max-w-md max-h-[85vh] bg-curious-blue-100 rounded-lg sm:p-5 p-3 flex flex-col items-center">
+        <div className="content relative w-full  max-w-md max-h-[85vh] bg-curious-blue-100 rounded-lg sm:p-5 p-3 flex flex-col items-center">
           <span
             className="absolute top-0 right-0 m-4 cursor-pointer"
             onClick={() => {
               handleCloseModal();
-              setModalClosed(true);
             }}
           >
             <AiOutlineClose />
           </span>
-          <div className="modalImagePetArea overflow-hidden flex items-center justify-center max-w-sm rounded-lg">
+          <div className="modalImagePetArea overflow-hidden flex items-center justify-center max-w-sm rounded-lg min-h-[260px]">
             <Image
               src={currentPet[0].img}
-              className=" "
+              className=" h-full object-cover "
               width={750}
               height={500}
               alt=""

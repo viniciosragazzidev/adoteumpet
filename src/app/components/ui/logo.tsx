@@ -1,5 +1,6 @@
 import { setIsLoading } from "@/app/redux/appSlice";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { IoPawSharp } from "react-icons/io5";
 import { useDispatch } from "react-redux";
 import { twMerge } from "tailwind-merge";
@@ -9,6 +10,8 @@ interface LogoProps {
 }
 
 const Logo = ({ styleCustom }: LogoProps) => {
+  const currentURL = usePathname();
+
   const customClass = twMerge(
     `logo  text-2xl font-bold flex gap-1 items-center ${styleCustom}`
   );
@@ -18,7 +21,7 @@ const Logo = ({ styleCustom }: LogoProps) => {
       href="/"
       className={customClass}
       onClick={() => {
-        dispatch(setIsLoading(true));
+        currentURL != "/" && dispatch(setIsLoading(true));
       }}
     >
       <IoPawSharp className="text-curious-blue-500" />
