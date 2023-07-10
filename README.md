@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Adote um Pet
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+O projeto **Adote um Pet** é um site que ajuda as pessoas a encontrarem um pet para adoção e permite que os usuários publiquem animais para adoção. Nosso objetivo é promover a adoção responsável de animais, conectando aqueles que desejam dar um lar amoroso a um pet que precisa de cuidado e proteção.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- Tailwind CSS
+- React Form
+- Next Auth
+- Framer Motion
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Imagens
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Aqui estão algumas imagens do projeto:
 
-## Learn More
+![Imagem 1](![192 168 1 2_3000_adote](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/7bd39241-770e-435e-8c3a-1033f3acb0e6))
+![Imagem 2]![192 168 1 2_3000_adote (2)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/a02882ce-0e89-4c1a-98c0-b37c7bdf7387)
 
-To learn more about Next.js, take a look at the following resources:
+![Imagem 3](![192 168 1 2_3000_adote (1)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/fbb89cfb-77a0-4e58-ba9e-4d8772aa2f7c))
+![Imagem 4]![192 168 1 2_3000_adote (3)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/1ba510df-dbd2-459b-b849-08d080996684)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalação
 
-## Deploy on Vercel
+Para executar o projeto localmente, siga as etapas abaixo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone este repositório.
+2. Navegue até o diretório do projeto.
+3. Execute o comando `npm install` para instalar as dependências.
+4. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento.
+5. Abra o navegador e acesse `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Agora você pode explorar o site Adote um Pet e começar a buscar ou publicar animais para adoção!
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja contribuir com o projeto, siga estas etapas:
+
+1. Faça um fork deste repositório.
+2. Crie uma nova branch com sua contribuição: `git checkout -b minha-contribuicao`.
+3. Faça as alterações desejadas e adicione os commits: `git commit -am 'Minha contribuição'`.
+4. Faça o push para o repositório remoto: `git push origin minha-contribuicao`.
+5. Abra uma Pull Request explicando suas alterações.
+
+Agradecemos antecipadamente por suas contribuições!
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
