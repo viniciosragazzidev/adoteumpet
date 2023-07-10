@@ -16,11 +16,10 @@ O projeto **Adote um Pet** é um site que ajuda as pessoas a encontrarem um pet 
 
 Aqui estão algumas imagens do projeto:
 
-![Imagem 1](![192 168 1 2_3000_adote](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/7bd39241-770e-435e-8c3a-1033f3acb0e6))
-![Imagem 2]![192 168 1 2_3000_adote (2)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/a02882ce-0e89-4c1a-98c0-b37c7bdf7387)
+(![192 168 1 2_3000_adote](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/7bd39241-770e-435e-8c3a-1033f3acb0e6))
+![192 168 1 2_3000_adote (2)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/a02882ce-0e89-4c1a-98c0-b37c7bdf7387)
 
-![Imagem 3](![192 168 1 2_3000_adote (1)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/fbb89cfb-77a0-4e58-ba9e-4d8772aa2f7c))
-![Imagem 4]![192 168 1 2_3000_adote (3)](https://github.com/viniciosragazzidev/adoteumpet/assets/125518719/1ba510df-dbd2-459b-b849-08d080996684)
+
 
 
 ## Instalação
